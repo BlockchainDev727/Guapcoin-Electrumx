@@ -3088,3 +3088,27 @@ class Bellcoin(Coin):
         '''Given a header return the hash.'''
         import bell_yespower
         return bell_yespower.getPoWHash(header)
+
+class Guapcoin(Coin):
+
+    NAME = "Guapcoin"
+    SHORTNAME = "GUAP"
+    NET = "mainnet"
+    XPUB_VERBYTES = bytes.fromhex("022D2533")
+    XPRV_VERBYTES = bytes.fromhex("0221312B")
+    P2PKH_VERBYTE = bytes.fromhex("26")
+    P2SH_VERBYTES = [bytes.fromhex("27")]
+    WIF_BYTE = bytes.fromhex("A6")
+    GENESIS_HASH = (
+        '00000e46b40941a34fa22381468474fad681fd94942f0a5c5bc923b005f8a90d')
+    DAEMON = daemon.DashDaemon
+    TX_COUNT = 288
+    TX_COUNT_HEIGHT = 3030
+    TX_PER_BLOCK = 1
+    RPC_PORT = 9855
+
+    @classmethod
+    def header_hash(cls, header):
+        '''Given a header return the hash.'''
+        import quark_hash
+        return quark_hash.getPoWHash(header)
