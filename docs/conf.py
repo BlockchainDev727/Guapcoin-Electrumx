@@ -15,12 +15,12 @@
 import os
 import sys
 sys.path.insert(0, os.path.abspath('..'))
-VERSION="ElectrumX 1.12.0"
+VERSION="ElectrumX 1.12.1"
 
 # -- Project information -----------------------------------------------------
 
 project = 'ElectrumX'
-copyright = '2016-2018, Neil Booth'
+copyright = '2016-2019, Vang YangPao'
 author = 'Neil Booth'
 
 # The full version including branding
@@ -82,8 +82,8 @@ html_theme = 'alabaster'
 #
 html_theme_options = {
     'description': 'Lightweight Electrum Server in Python',
-    'github_user': 'kyuupichan',
-    'github_repo': 'electrumx',
+    'github_user': 'blockchaindev727',
+    'github_repo': 'Guapcoin-electrumx',
     'github_button': True,
     'github_type': 'star',
     'github_banner': True,
@@ -139,7 +139,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'ElectrumX.tex', 'ElectrumX Documentation',
-     'Neil Booth', 'manual'),
+     'Vang YangPao', 'manual'),
 ]
 
 
