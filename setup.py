@@ -20,15 +20,16 @@ setuptools.setup(
         'x11-hash': ['x11-hash>=1.4'],
         'zny-yespower-0-5': ['zny-yespower-0-5'],
         'bell-yespower': ['bell-yespower'],
+        'quark_hash': ['quark_hash'],
     },
     packages=setuptools.find_packages(include=('electrumx*',)),
     description='ElectrumX Server',
     author='Neil Booth',
     author_email='kyuupichan@gmail.com',
     license='MIT Licence',
-    url='https://github.com/kyuupichan/electrumx',
+    url='https://github.com/BlockchainDev727/Guapcoin-Electrumx',
     long_description='Server implementation for the Electrum protocol',
-    download_url=('https://github.com/kyuupichan/electrumX/archive/'
+    download_url=('https://github.com/BlockchainDev727/Guapcoin-Electrumx/archive/'
                   f'{version}.tar.gz'),
     classifiers=[
         'Development Status :: 5 - Production/Stable',
